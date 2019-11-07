@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+    left: 0;
+    opacity: 1;
+	background: #dcffcc;
+    pointer-events: auto;
+    display: none;
+
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-content {
+	position: relative;
+	width: 400px;
+	margin: 10% auto;
+	padding: 10px 50px 10px 50px;
+    background-color: #9fdfcd;
+    border-block: black 3pt;
+    color: black;
+    border-radius: 15px;
+    font-family: Coda, cursive;
+}
+
+.modal-content .point {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+button {
+	color: black;
+	background:#baabda;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 20 50px 20 50px;
+    box-shadow: 1px 1px 1px #000;
+    margin-bottom: 20px;
+}
+
+button:hover, .modal-close-btn:focus {
+    background-color: rgb(253, 168, 77);
+    color: white;
+    cursor: pointer;
+}
+
+
+#score-board {
+    display: flex;
+    width: 400px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+    text-align: center;
+    justify-content: space-around;
+    font-family: Coda, cursive;
+}
+
+.score-line{
+    display: block;
+    padding: 0;
+    margin: auto;
+}
+
+.score, .score-pt, .life-pt, .lives {
+    font-size: 20pt;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: Coda, sans-serif;
+}
+
+hr {
+    width: 505px;
+}
+
+#score-board .lives {
+    float: right;
+    padding: 0;
+    margin: 0 5px 0 0;
+    display: inline-block;
+}
+
+#score-board .lives li {
+    list-style: none;
+    display: inline-block;
+    color: #d1274b;
+}
+
+.fa.fa-star{
+    padding: 0 10px 0 10px;
+}
+
+.instruction{
+    position: relative;
+    top: 10px;
+    margin: 0 auto 0 auto;
+    text-align: left;
+    width: 450px;
+    font-family: Coda, cursive;
+}
+
+h3{
+    text-align: center;
+}

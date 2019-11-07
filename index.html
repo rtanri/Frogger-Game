@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Solution: Frogger</title>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Frogger Game - Run To The River</h2>
+    <hr>
+    <div id="score-board">
+            <span class="score-pt">Score: <span class="score">0</span> </span> 
+    
+            <!-- <span class="heart-left">Life: <span class=heart-icon>v v v</span></span>-->
+            <span class="life-pt"><span>Life :  </span>
+            <ul class="lives">
+                <li><i class="fa fa-heart"></i></li>
+                <li><i class="fa fa-heart"></i></li>
+                <li><i class="fa fa-heart"></i></li>
+            </ul>
+        </span>
+    </div>
+    
+    <div class='instruction'>
+            <article>
+            <ol><h3>Instruction:</h3>
+                <li>You will get +25 poins everytime you reach the river,</li>
+                <li>Oops, don't get hit by the bugs</li>
+                <li>Press 'space' to change character</li>
+                <li>Press arrow key to move</li>
+            </ol>
+            </article>
+        </div>
+    
+    <!-- Modal showed in the begining of the game -->
+    <div id='introModal' class='modal show'>
+        <div class='modal-content'>
+            <h2>Arcade Frogger Game</h2>
+            <p>Imagine that you really love to swim,<p>
+            <p>now, run to the river as much as you can!!</p>
+            <button id='startButton'>Start Game</button>
+        </div>
+    </div>
+
+    <!-- Modal showed in the end of the game -->
+    <div id='resultModal' class='modal'>
+        <div class='modal-content'>
+            <h2>Game has ended!</h2>
+            <p>Your score is: <span class="point">100</span></p> 
+            <button id='endButton'>Play Again</button>
+        </div>
+    </div>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
